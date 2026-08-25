@@ -1,0 +1,16 @@
+<!--
+  FAVICON — placeholder simples com o monograma "DP".
+  Este SVG é usado como favicon principal (browsers modernos
+  suportam favicons em SVG). Também geramos um favicon.png como
+  alternativa para browsers/dispositivos mais antigos (ex: Safari
+  no iOS para o ícone de "adicionar ao ecrã principal").
+
+  Para personalizar: basta editar o texto "DP" abaixo, ou
+  substituir este ficheiro por um logótipo próprio.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="16" fill="#111113" />
+  <text x="50%" y="56%" text-anchor="middle" dominant-baseline="middle"
+        font-family="Georgia, 'Times New Roman', serif" font-size="28"
+        fill="#fbfaf8">DP</text>
+</svg>

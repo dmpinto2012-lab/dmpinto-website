@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- =========================================================
+       SEO — TÍTULO E DESCRIÇÃO
+       Edita estas duas linhas com o teu nome / descrição real.
+       ========================================================= -->
+  <title>Duarte Pinto — Student</title>
+  <meta name="description" content="Duarte Pinto — student, curious about technology, design and building things." />
+  <meta name="author" content="Duarte Pinto" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://dmpinto.com/" />
+
+  <!-- =========================================================
+       OPEN GRAPH / REDES SOCIAIS
+       Substitui assets/og-image.jpg por uma imagem real 1200x630px
+       para o link ficar bonito quando partilhado no WhatsApp,
+       LinkedIn, Twitter/X, etc.
+       ========================================================= -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Duarte Pinto — Student" />
+  <meta property="og:description" content="Duarte Pinto — student, curious about technology, design and building things." />
+  <meta property="og:image" content="https://dmpinto.com/assets/og-image.jpg" />
+  <meta property="og:url" content="https://dmpinto.com/" />
+  <meta property="og:site_name" content="Duarte Pinto" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Duarte Pinto — Student" />
+  <meta name="twitter:description" content="Duarte Pinto — student, curious about technology, design and building things." />
+  <meta name="twitter:image" content="https://dmpinto.com/assets/og-image.jpg" />
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="alternate icon" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/favicon.png" />
+
+  <!-- Sem frameworks, sem fontes externas: tudo carrega instantaneamente -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Link de acessibilidade: permite saltar a navegação com o teclado -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- =========================================================
+       NAVEGAÇÃO
+       ========================================================= -->
+  <header class="site-header" id="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#home" class="nav__brand" aria-label="Back to top">DP</a>
+
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#home" class="nav__link">Home</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#writing" class="nav__link">Writing</a></li>
+        <li><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- =========================================================
+         HERO
+         ========================================================= -->
+    <section class="hero" id="home">
+      <div class="hero__inner">
+
+        <div class="hero__text reveal">
+          <p class="hero__eyebrow">Hello, I'm</p>
+
+          <!-- EDITAR: o teu nome -->
+          <h1 class="hero__name">Duarte Pinto</h1>
+
+          <!-- EDITAR: a tua descrição curta (ex: "Student", "Designer", "Engineer") -->
+          <p class="hero__role">Student</p>
+
+          <!-- EDITAR: frase curta por baixo do nome. Mantém curta (1 linha). -->
+          <p class="hero__tagline">Curious about most things, certain about a few.</p>
+
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">View projects</a>
+            <a href="#contact" class="btn btn--ghost">Get in touch</a>
+          </div>
+        </div>
+
+        <div class="hero__photo reveal reveal--delay-1">
+          <div class="hero__photo-frame">
+            <!-- =====================================================
+                 FOTOGRAFIA — SUBSTITUIR AQUI
+                 Este SVG é apenas um placeholder elegante (as
+                 iniciais "DP" com um fundo em gradiente).
+
+                 Para colocares a tua fotografia real:
+                 1. Coloca o teu ficheiro (ex: "photo.jpg") dentro da
+                    pasta /assets
+                 2. Substitui a linha <img> abaixo por:
+                    <img src="assets/photo.jpg" alt="Duarte Pinto" class="hero__photo-img" />
+                 3. Apaga (ou comenta) o <svg> do placeholder.
+
+                 Sugestão: usa uma foto quadrada, boa luz natural,
+                 fundo simples. 800x800px já é suficiente.
+                 ===================================================== -->
+            <svg class="hero__photo-img hero__photo-placeholder" viewBox="0 0 400 400" role="img" aria-label="Placeholder photo of Duarte Pinto">
+              <defs>
+                <linearGradient id="placeholderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#2b2b2f" />
+                  <stop offset="100%" stop-color="#0a0a0b" />
+                </linearGradient>
+              </defs>
+              <rect width="400" height="400" fill="url(#placeholderGradient)" />
+              <text x="50%" y="53%" text-anchor="middle" dominant-baseline="middle"
+                    font-family="Georgia, 'Times New Roman', serif" font-size="120"
+                    fill="#f5f5f4" opacity="0.92">DP</text>
+            </svg>
+            <!-- Quando trocares para a foto real, este <img> substitui o <svg> acima -->
+            <!-- <img src="assets/photo.jpg" alt="Duarte Pinto" class="hero__photo-img" /> -->
+          </div>
+        </div>
+
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+        <span class="scroll-cue__line"></span>
+      </a>
+    </section>
+
+    <!-- =========================================================
+         ABOUT
+         ========================================================= -->
+    <section class="section" id="about">
+      <div class="section__inner section__inner--narrow">
+        <p class="section__eyebrow reveal">About</p>
+        <h2 class="section__title reveal">A bit about me</h2>
+
+        <!-- =====================================================
+             EDITAR: texto genérico abaixo — personaliza à vontade.
+             Mantém 2–4 parágrafos curtos para ficar elegante.
+             ===================================================== -->
+        <div class="about__body reveal reveal--delay-1">
+          <p>
+            I'm a student with a quiet obsession for how things work — from
+            the software running behind a good product to the small design
+            decisions that make it feel effortless. Most of what I know, I
+            learned by taking something apart and trying to put it back
+            together, usually better than before.
+          </p>
+          <p>
+            I care about clarity: in code, in writing, and in the things I
+            build. Lately that curiosity has been split between technology
+            and creation — building small projects, learning new tools, and
+            occasionally writing down what I find along the way.
+          </p>
+          <p>
+            This site is a small, honest snapshot of that — a place to keep
+            track of what I'm making and what I'm thinking about.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         PROJECTS
+         ========================================================= -->
+    <section class="section section--tinted" id="projects">
+      <div class="section__inner">
+        <p class="section__eyebrow reveal">Projects</p>
+        <h2 class="section__title reveal">Things I've been building</h2>
+        <p class="section__subtitle reveal">
+          A selection of personal projects — some finished, some very much in progress.
+        </p>
+
+        <!-- =====================================================
+             CADA .project-card É UM PROJETO.
+             Para adicionar um projeto novo, copia um bloco
+             <article class="project-card">...</article> inteiro,
+             cola-o antes ou depois dos outros, e edita o conteúdo.
+
+             data-status aceita: "active", "done", "paused"
+             (isto controla apenas a cor do estado, é opcional).
+             ===================================================== -->
+
+        <div class="project-grid">
+
+          <!-- Projeto 1 — EXEMPLO, edita ou substitui -->
+          <article class="project-card reveal">
+            <div class="project-card__image project-card__image--placeholder" aria-hidden="true">
+              <!-- EDITAR: para usares uma imagem, substitui a div acima por:
+                   <img src="assets/project-1.jpg" alt="Descrição do projeto" class="project-card__image" /> -->
+              <span class="project-card__image-glyph">01</span>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="tag">Web App</span>
+                <span class="status status--active">In progress</span>
+              </div>
+              <!-- EDITAR: nome do projeto -->
+              <h3 class="project-card__title">Project Name</h3>
+              <!-- EDITAR: descrição curta -->
+              <p class="project-card__desc">
+                A short, clear description of what this project does and
+                why it exists. One or two sentences is plenty.
+              </p>
+              <!-- EDITAR: link do projeto -->
+              <a href="https://example.com" class="project-card__link" target="_blank" rel="noopener noreferrer">
+                View project <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Projeto 2 — EXEMPLO, edita ou substitui -->
+          <article class="project-card reveal reveal--delay-1">
+            <div class="project-card__image project-card__image--placeholder" aria-hidden="true">
+              <span class="project-card__image-glyph">02</span>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="tag">Design</span>
+                <span class="status status--done">Completed</span>
+              </div>
+              <h3 class="project-card__title">Another Project</h3>
+              <p class="project-card__desc">
+                A short, clear description of what this project does and
+                why it exists. One or two sentences is plenty.
+              </p>
+              <a href="https://example.com" class="project-card__link" target="_blank" rel="noopener noreferrer">
+                View project <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Projeto 3 — EXEMPLO, edita ou substitui -->
+          <article class="project-card reveal reveal--delay-2">
+            <div class="project-card__image project-card__image--placeholder" aria-hidden="true">
+              <span class="project-card__image-glyph">03</span>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="tag">Experiment</span>
+                <span class="status status--paused">On hold</span>
+              </div>
+              <h3 class="project-card__title">Side Experiment</h3>
+              <p class="project-card__desc">
+                A short, clear description of what this project does and
+                why it exists. One or two sentences is plenty.
+              </p>
+              <a href="https://example.com" class="project-card__link" target="_blank" rel="noopener noreferrer">
+                View project <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         WRITING — artigos publicados no Craft (home.dmpinto.com)
+         ========================================================= -->
+    <section class="section" id="writing">
+      <div class="section__inner">
+        <p class="section__eyebrow reveal">Writing</p>
+        <h2 class="section__title reveal">Notes &amp; articles</h2>
+        <p class="section__subtitle reveal">
+          Longer thoughts, published on
+          <a href="https://home.dmpinto.com" target="_blank" rel="noopener noreferrer" class="inline-link">home.dmpinto.com</a>.
+        </p>
+
+        <!-- =====================================================
+             CADA .writing-card É UM ARTIGO.
+             Para adicionar um artigo novo publicado no Craft:
+             1. Copia um bloco <article class="writing-card">...</article>
+             2. Edita o título, a descrição e a data
+             3. Substitui o href pelo link real do teu documento Craft
+                (ex: https://home.dmpinto.com/o-teu-artigo)
+             ===================================================== -->
+
+        <div class="writing-list">
+
+          <!-- Artigo 1 — EXEMPLO, edita ou substitui -->
+          <!-- EDITAR: href="" com o link real do artigo no Craft -->
+          <a href="https://home.dmpinto.com/#" class="writing-card reveal" target="_blank" rel="noopener noreferrer">
+            <div class="writing-card__body">
+              <time class="writing-card__date" datetime="2026-01-01">Jan 2026</time>
+              <h3 class="writing-card__title">Article Title Goes Here</h3>
+              <p class="writing-card__desc">
+                A short description of what this article or note is about,
+                enough to make someone want to click through and read it.
+              </p>
+            </div>
+            <span class="writing-card__arrow" aria-hidden="true">→</span>
+          </a>
+
+          <!-- Artigo 2 — EXEMPLO, edita ou substitui -->
+          <a href="https://home.dmpinto.com/#" class="writing-card reveal reveal--delay-1" target="_blank" rel="noopener noreferrer">
+            <div class="writing-card__body">
+              <time class="writing-card__date" datetime="2026-02-01">Feb 2026</time>
+              <h3 class="writing-card__title">Another Note</h3>
+              <p class="writing-card__desc">
+                A short description of what this article or note is about,
+                enough to make someone want to click through and read it.
+              </p>
+            </div>
+            <span class="writing-card__arrow" aria-hidden="true">→</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         CONTACT
+         ========================================================= -->
+    <section class="section section--contact" id="contact">
+      <div class="section__inner section__inner--narrow section__inner--center">
+        <p class="section__eyebrow reveal">Contact</p>
+        <h2 class="section__title reveal">Want to get in touch?</h2>
+        <p class="section__subtitle reveal">
+          Feel free to reach out — I'm always happy to hear from people
+          building interesting things.
+        </p>
+
+        <!-- =====================================================
+             EDITAR: substitui todos os placeholders abaixo pelos
+             teus dados/URLs reais. Se não quiseres mostrar algum,
+             apaga o <a> correspondente.
+             ===================================================== -->
+        <div class="contact-links reveal reveal--delay-1">
+          <a href="mailto:your-email@example.com" class="contact-link">
+            <span class="contact-link__label">Email</span>
+            <span class="contact-link__value">your-email@example.com</span>
+          </a>
+          <a href="https://github.com/your-username" class="contact-link" target="_blank" rel="noopener noreferrer">
+            <span class="contact-link__label">GitHub</span>
+            <span class="contact-link__value">@your-username</span>
+          </a>
+          <a href="https://linkedin.com/in/your-username" class="contact-link" target="_blank" rel="noopener noreferrer">
+            <span class="contact-link__label">LinkedIn</span>
+            <span class="contact-link__value">/in/your-username</span>
+          </a>
+          <a href="https://instagram.com/your-username" class="contact-link" target="_blank" rel="noopener noreferrer">
+            <span class="contact-link__label">Instagram</span>
+            <span class="contact-link__value">@your-username</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       FOOTER
+       ========================================================= -->
+  <footer class="site-footer">
+    <p>&copy; <span id="year">2026</span> Duarte Pinto</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
